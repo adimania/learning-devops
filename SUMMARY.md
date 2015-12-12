@@ -7,5 +7,5 @@
 * [Code Management](chapter4.md)
 * [Continuous Integration and Deployment](chapter5.md)
 * [Scaling Applications](chapter6.md)
-* Backups
+* [Backups](chapter7.md)
 
