@@ -5,5 +5,5 @@
 * [Monitoring](chapter2.md)
 * [Configuration Management](chapter3.md)
 * Code Management
-* Continuous Integration
+* Continuous Integration and Deployment
 
