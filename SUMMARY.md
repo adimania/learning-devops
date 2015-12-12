@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Linux Introduction](chapter1.md)
-* Monitoring
+* [Monitoring](chapter2.md)
 
