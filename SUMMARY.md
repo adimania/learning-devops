@@ -6,6 +6,6 @@
 * [Configuration Management](chapter3.md)
 * [Code Management](chapter4.md)
 * [Continuous Integration and Deployment](chapter5.md)
-* Scaling Applications
+* [Scaling Applications](chapter6.md)
 * Backups
 
