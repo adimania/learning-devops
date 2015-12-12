@@ -4,7 +4,7 @@
 * [Linux Introduction](chapter1.md)
 * [Monitoring](chapter2.md)
 * [Configuration Management](chapter3.md)
-* [Code Management](code_management.md)
+* [Code Management](chapter4.md)
 * Continuous Integration and Deployment
 * Scaling Applications
 * Backups
