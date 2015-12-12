@@ -7,4 +7,5 @@
 * Code Management
 * Continuous Integration and Deployment
 * Scaling Applications
+* Backups
 
