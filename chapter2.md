@@ -1,4 +1,5 @@
-## How and what to monitor?
+## What is monitoring?
+
 ### Monitoring tools:
 #### Self hosted:
 * Nagios
