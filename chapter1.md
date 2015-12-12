@@ -11,4 +11,4 @@ First of all, we will check out the tools of the trade. A brief summary is given
 
 ### Concepts
 * Load average: Load average quantifies the number of processes in runnable state. A one minute load average of 2.5 on a quad core machines essentially means that within last one minute, there were 2.5 processes demanding for CPU resoueces. Since we have four cores, our system was underutilized. 
-* ulimit: Linux system puts limits on resources. These limits are defined in limits.conf. There are two kinds of limits, hard limit and soft limit. An unprivileged process can change only its soft limit up to a maximum of hard limit.
+* ulimit: Linux system puts limits on resources. These limits are defined in limits.conf. There are two kinds of limits, hard limit and soft limit. An unprivileged process can change only its soft limit up to a maximum of hard limit. 
