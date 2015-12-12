@@ -5,7 +5,7 @@
 * [Monitoring](chapter2.md)
 * [Configuration Management](chapter3.md)
 * [Code Management](chapter4.md)
-* Continuous Integration and Deployment
+* [Continuous Integration and Deployment](chapter5.md)
 * Scaling Applications
 * Backups
 
