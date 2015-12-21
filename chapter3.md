@@ -31,10 +31,33 @@ Among all the tools that we have evaluated, we love Ansible the most for multipl
 * It uses OpenSSH as transport
 * Easy to read because it uses YAML
  
-## Setup Ansible
+## Ansible Crash Course
+We are going to deliver a quick peek into Ansible setup and its way of working.
+
+### Ansible Setup
 Getting Ansible on most of the *nix is easy. Just use default package managers like yum, dnf or apt-get.
 However, if you like to play with latest and greatest, then using pip is a good choice.
 
 ```# pip install ansible```
+
+### Ansible Components
+Here are the basic components of an Ansible setup
+* Inventory: It is a list of servers that Ansible will run on. We can group these servers in logical units and run Ansible on groups simultaneously. Example:
+```
+[webservers]
+server1
+[application]
+server1
+server2
+```
+* Variables: These are ... variable
+* Tasks: These are the smallest unit of work in Ansible world. A task can be to create a file or to remove a user or to install a package.
+* Roles: These are collection of tasks that can be used to achieve an objective end-to-end. For example, setting up Nginx can be a role which in turn will have tasks like installation, starting, setting up config etc.
+* Playbooks: These are like the programs that encapsulates several roles. For example, setting up a application server may involve Nginx role, passenger role and a common role for installing things like git or iotop.
+* Modules: These are little (or huge?) plugins that actually do the work. These are similar to libraries (if you are familiar with C/Java) or modules (for python or ruby folks).
+ 
+
+
+
 
 
