@@ -101,4 +101,4 @@ $ ansible webservers -m command -a "ls"
       service: name=flask-demo state=restarted
 ```
 
-Hey! Wait! Where is the explanation of this big blob of lines above?
+If you are thinking, *"Hey! Wait! Where is the explanation of this big blob of lines above?"*, then we would say, try reading it once.
