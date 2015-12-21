@@ -42,7 +42,7 @@ However, if you like to play with latest and greatest, then using pip is a good 
 
 ### Ansible Components
 Here are the basic components of an Ansible setup
-* Inventory: It is a list of servers that Ansible will run on. We can group these servers in logical units and run Ansible on groups simultaneously. Example:
+* **Inventory:** It is a list of servers that Ansible will run on. We can group these servers in logical units and run Ansible on groups simultaneously. Example:
 ```
 [webservers]
 server1
@@ -50,14 +50,55 @@ server1
 server1
 server2
 ```
-* Variables: These are ... variable
-* Tasks: These are the smallest unit of work in Ansible world. A task can be to create a file or to remove a user or to install a package.
-* Roles: These are collection of tasks that can be used to achieve an objective end-to-end. For example, setting up Nginx can be a role which in turn will have tasks like installation, starting, setting up config etc.
-* Playbooks: These are like the programs that encapsulates several roles. For example, setting up a application server may involve Nginx role, passenger role and a common role for installing things like git or iotop.
-* Modules: These are little (or huge?) plugins that actually do the work. These are similar to libraries (if you are familiar with C/Java) or modules (for python or ruby folks).
- 
+* **Variables:** These are ... variables.
+* **Tasks:** These are the smallest unit of work in Ansible world. A task can be to create a file or to remove a user or to install a package.
+* **Roles:** These are collection of tasks that can be used to achieve an objective end-to-end. For example, setting up Nginx can be a role which in turn will have tasks like installation, starting, setting up config etc.
+* **Playbooks:** These are like the programs that encapsulates several roles. For example, setting up a application server may involve Nginx role, passenger role and a common role for installing things like git or iotop.
+* **Modules:** These are little (or huge?) plugins that actually do the work. These are similar to libraries (if you are familiar with C/Java) or modules (for python or ruby folks). Every task has to use a module to do *something*. They can be written in a role or a playbook and they can be called directly via command line.
+```
+$ ansible webservers -m command -a "ls"
+```
 
+### Simple Playbook
+```
+---
+- hosts: localhost
+  sudo: yes
+  vars:
+    - server_port: 8080
 
+  tasks:
+    - name: install nginx
+      yum: pkg=nginx state=installed
 
+    - name: serve nginx config
+      template: src=../files/flask.conf dest=/etc/nginx/conf.d/
+      notify:
+      - restart nginx
 
+    - name: install pip
+      yum: name=python-pip state=installed
 
+    - name: install flask
+      pip: name=flask
+
+    - name: serve flask app systemd unit file
+      copy: src=../files/flask-demo.service dest=/etc/systemd/system/
+
+    - name: fetch application
+      git: repo=https://gist.github.com/c454e2e839fcb20605a3.git dest=/opt/flask-demo
+      notify:
+        - restart flask app
+
+    - name: set selinux to permissive for demo
+      selinux: policy=targeted state=permissive
+
+    handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
+
+    - name: restart flask app
+      service: name=flask-demo state=restarted
+```
+
+Hey! Wait! Where is the explanation of this big blob of lines above?
