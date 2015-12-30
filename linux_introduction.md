@@ -1,5 +1,5 @@
 # What is Linux?
-Linux is any operating system which uses Linux Kernel for managing system resources. Linux Kernel, itself, is licensed under GNU General Public License. This ensures that anyone can read, understand and modify the kernel to suit their needs. However, modificatoin is not a part of this course, and it is not required for most of the common usecases. 
+Linux is any operating system which uses Linux Kernel for managing system resources. Linux Kernel, itself, is licensed under GNU General Public License. This ensures that anyone can read, understand and modify the kernel to suit their needs. However, modification is not a part of this course, and it is not required for most of the common use cases. 
 
 ## Tools of the trade
 First of all, we will check out the tools of the trade. A brief summary is given below. We'll discuss these tools in detail as we go ahead.
