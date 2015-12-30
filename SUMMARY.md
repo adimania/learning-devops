@@ -3,7 +3,7 @@
 * [Introduction to the Book](README.md)
 * [What is DevOps?](what_is_devops.md)
 * [Linux Introduction](linux_introduction.md)
-* [Monitoring](chapter2.md)
+* [Monitoring](monitoring.md)
 * [Configuration Management](chapter3.md)
 * [Code Management](chapter4.md)
 * [Continuous Integration and Deployment](chapter5.md)
