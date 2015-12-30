@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction to the content](README.md)
+* [Introduction to the Book](README.md)
 * Introduction to Agile
 * [Linux Introduction](chapter1.md)
 * [Monitoring](chapter2.md)
