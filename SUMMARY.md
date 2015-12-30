@@ -8,4 +8,5 @@
 * [Continuous Integration and Deployment](chapter5.md)
 * [Scaling Applications](chapter6.md)
 * [Backups](chapter7.md)
+* Introduction to Agile
 
