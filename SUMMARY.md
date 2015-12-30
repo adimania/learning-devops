@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction to the Book](README.md)
-* Introduction to Agile
+* [What is DevOps?](what_is_devops)
 * [Linux Introduction](chapter1.md)
 * [Monitoring](chapter2.md)
 * [Configuration Management](chapter3.md)
