@@ -4,7 +4,7 @@
 * [What is DevOps?](what_is_devops.md)
 * [Linux Introduction](linux_introduction.md)
 * [Monitoring](monitoring.md)
-* [Configuration Management](chapter3.md)
+* [Configuration Management](configuration_management.md)
 * [Code Management](chapter4.md)
 * [Continuous Integration and Deployment](chapter5.md)
 * [Scaling Applications](chapter6.md)
