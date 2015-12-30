@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction to the Book](README.md)
-* [What is DevOps?](what_is_devops)
+* [What is DevOps?](what_is_devops.md)
 * [Linux Introduction](chapter1.md)
 * [Monitoring](chapter2.md)
 * [Configuration Management](chapter3.md)
