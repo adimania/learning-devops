@@ -21,3 +21,5 @@ While development teams are having team outing to celebrate a product greatly do
 The team outing is ruined. Of course, none of the product teams, development teams and the organization management is happy. Customers won't get the great product or feature on time. 
 
 Many of us have lived bits and pieces of this story. Some of us have lived through the entire nightmare of it. This is the problem which DevOps is trying to fix. Had there be involvement of Developers while planning the product, the time lines would have been much realistic. Had there been involvement of QA teams and Ops teams in the development process, then deployment of the application would have been much smoother.
+
+DevOps was started as a movement to improve the collaboration between Devs and Ops but now it stands for much more. Companies who have embraced DevOps philosophy are able to build more robust products, faster. 
